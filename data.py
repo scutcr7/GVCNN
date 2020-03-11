@@ -67,10 +67,6 @@ class ModelNet40Views(Dataset):
 
 if __name__ == '__main__':
     train = ModelNet40Views(data_root='', base_model='ALEXNET', mode="train")
-    # test = ModelNet40(config=args, partition='test')
-    # for data, label in train:
-    #     print(data.shape)
-    #     print(label)
-    data, label = train[514]
+    data, label = train[0]
     print('data: {}'.format(data.shape))
     print('label: {}'.format(label))
