@@ -6,7 +6,7 @@ import os
 
 
 parser = argparse.ArgumentParser("GVCNN")
-parser.add_argument("--data_dir", type=str, default="/home/wlq/data_3D/pvrnet/12_ModelNet40/", help="dataset path")
+parser.add_argument("--data_dir", type=str, default="", help="dataset path")
 parser.add_argument('--gpu_device', type=str, default="0", help="gpu id")
 parser.add_argument('--seed', type=int, default=6, help="random seed")
 parser.add_argument('--mv_backbone', type=str, default='GOOGLENET', help=('ALEXNET', 'VGG13', 'VGG13BN', 'VGG11BN', 'RESNET50', 'GOOGLENET'
