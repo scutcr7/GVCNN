@@ -24,7 +24,6 @@ torch.autograd.set_detect_anomaly(True)
 
 
 def train():
-    # 保存目录
    
     save_dir = 'exp_gvcnn_{}_{}'.format(args.mv_backbone.lower(), time.strftime("%Y%m%d-%H%M%S"))
                                                                 
